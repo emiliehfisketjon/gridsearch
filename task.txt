@@ -1,0 +1,76 @@
+Task:
+Write a short command-line program which takes some input, reads a couple of files, solves the problem and prints the solution to screen. If you struggle solving the task or if it takes you too long to solve, we would still like to see what you've been able to come up with, but we expect you to accomplish a functional solution as a bare minimum. 
+
+Further we want you to try showing off your skills by going to the bonus section below and implementing something from it that requires you to code, or alternatively something else that is somewhat out-of-scope from just solving the problem. Picking just one or two of the simplest ones likely won't get you to the technical interview stage, unless everything is done exceptionally well comparatively to other candidates. Choose your strategy well.
+
+Finally we want you to review your own code and do at least 2 iterations of improving your code further from your first acceptably functional solution or other stopping point, showing and explaining what you did to cut down on the time it takes to solve the problem, or otherwise did to improve/strengthen your code. There is no requirements for actual time improvements or amount of improvements or added functionality, but your understanding of how you improved your code will carry a lot of weight in a potential technical interview.
+
+If you don't manage everything though - show us what you did, and tell us about it. :-)
+
+Note! Please deliver your code and review text without reference
+to your name or username.
+
+Problem:
+We want to find all the words with a given length hidden in
+a 2D grid. A word can be created by connecting neighboring
+characters. You can not connect characters diagonally, only
+vertical and horizontal. The words don't need to be in a
+straight line, see the example below. We want these words
+listed to us by length, then by alphabetical order.
+
+Example:
+Given this 3x3 grid:
+
+jop
+shn
+tvq
+
+With a minimum length of 3 characters, you'll want to find
+these words in the grid and list them in the following
+order:
+- john
+- shop
+- hop
+- ohs
+
+For more examples, see the other files.
+
+Input format:
+- Path to the file with the grid to be solved
+- Path to the word file with all the words to search for.
+- Optional, specify a minimum length for the word to find.
+
+Example input:
+java Solver grid3x3.txt words.txt 3
+
+Grid file format:
+- A grid of ascii lower case characters (a-z).
+- Each character represent a field.
+- A newline character ("\n") separates each row.
+
+Word file format:
+- All lower case ascii characters (a-z).
+- A newline character ("\n") separates each word.
+
+Requirements:
+- Must be written in Java (version doesn't matter).
+- Unit tests to verify your solution (JUnit or similar).
+
+What we're looking for when evaluating:
+- Ability to solve the problem.
+- Creativity and knowledge in how you solve the problem.
+- Readability of the code (try to keep it simple).
+- Anything from the bonus section counting as extra points
+- Ability to understand and reflect upon own code and improvements
+
+Bonus:
+- What 16 letter word is hidden in the 1000x1000 grid?
+- Google check style.
+- Write solution to disk.
+- No third-party library other than for tests.
+- Alternative and more efficient solutions.
+- Add support for wildcard and/or empty field in grid. 
+- Multi-threaded.
+- Make it a Spring web application (beware large grids).
+- Create a grid generator (maybe ensure long words exists).
+- Something else interesting that you see fit to further show your skill.
